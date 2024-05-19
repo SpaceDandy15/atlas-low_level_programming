@@ -2,9 +2,9 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - Entry
- * assinging random number to the variable n.
- * Return: Always 0 (Success)
+ *main - Entry
+ *assinging random number to the variable n.
+ *Return: Always 0 (Success)
  */
 
 int main(void)
