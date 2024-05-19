@@ -2,12 +2,13 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - Entry
+ * main - this is a short description of the project
+ *  variable will store a different value every time you
+ *   run this progra
  *
- * Return: Always 0 (Success)
- */
-
-int main(void) 
+ *   Return:
+ *   */
+int main(void)
 {
 	int n;
 
