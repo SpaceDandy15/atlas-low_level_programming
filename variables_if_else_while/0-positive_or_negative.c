@@ -6,7 +6,7 @@
  *  variable will store a different value every time you
  *   run this progra
  *
- *   Return:
+ *   Return: 0 (Success)
  */
 int main(void)
 {
