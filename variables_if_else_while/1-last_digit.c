@@ -3,7 +3,9 @@
 #include <time.h>
 /**
  * main
- * i must put a string with last digit of followed by n
+ * random number generator that compares last digits relation to 5.
+ * The result is based on the last digit being greater than 5, equal to 0,
+ * or less than 6 and not 0.
  * Return: Always 0
  */
 int main(void)
