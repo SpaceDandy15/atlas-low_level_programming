@@ -4,7 +4,7 @@
 
 /**
  * main
- * i think it wants something here 
+ * Shortdescription 
  * Return: Always 0 (Success)
  */
 
