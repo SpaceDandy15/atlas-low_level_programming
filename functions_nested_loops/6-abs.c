@@ -2,7 +2,14 @@
 #include "main.h"
 
 /**
- * main -
- *
- * Return: 0
+ * _abs - this function returns abolute value of a number
+ *@r: an integer input
+ * Return: Absolut value of number r
  */
+int _abs(int r)
+{
+	if (r >=0)
+		return (r);
+	else
+		return (r * -1);
+}
