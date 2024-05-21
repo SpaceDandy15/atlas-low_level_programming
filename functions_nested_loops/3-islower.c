@@ -1,7 +1,9 @@
 #include "main.h"
 
 /**
- * main - lowercase alphabet 10x 
+ * _islower - check
+ *
+ * alphabet in lowercase 10 times
  *
  * Return: 1 if is lowercase or 0 if is uppercase
  */
