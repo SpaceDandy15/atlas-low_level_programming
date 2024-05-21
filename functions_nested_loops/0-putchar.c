@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * _putchar - prgram prints _putchar
+ * main  - prgram prints _putchar
  *
  * Return: 0.
  */
