@@ -15,6 +15,5 @@ int _islower(int c)
 		if (i == c)
 			lower = 1;
 	}
-	
 	return (lower);
 }
