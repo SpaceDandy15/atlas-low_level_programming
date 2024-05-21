@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * main - this program prints alphabet in lower case
+ * print_alphabet this program prints alphabet in lower case
  *
  * Return: Nothing.
  */
