@@ -6,9 +6,10 @@
  * @b: int to be mulitplied to a
  * Return: the result o the operation
  */
-int mul (int a , int b)
+int mul(int a , int b)
 {
 	int c;
+
 	c = a * b;
 
 	return (c);
