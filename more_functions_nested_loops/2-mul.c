@@ -6,7 +6,7 @@
  * @b: int to be mulitplied to a
  * Return: the result o the operation
  */
-int multi (int a , int b)
+int mul (int a , int b)
 {
 	int c;
 	c = a * b;
