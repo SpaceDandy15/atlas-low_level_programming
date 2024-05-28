@@ -2,9 +2,11 @@
 /**
  * puts2 - prints every other character of a string
  * starting with the first character followed by a newline
+ * @str: string print the characters from
  */
 void puts2(char *str)
-{ int len, i;
+{
+	int len, i;
 
 	len = 0;
 
@@ -12,6 +14,7 @@ void puts2(char *str)
 	{
 		len++;
 	}
+
 	for (i = 0; i < len; i += 2)
 	{
 		_putchar(str[i]);
