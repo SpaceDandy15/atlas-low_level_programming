@@ -4,18 +4,14 @@
  * @s: string to be printed
  */
 void print_rev(char *s)
-{
-	char *end = s;
-	
-	while (*end) 
-	{
-		++end;
-	}
-	--end;
+{int len = 0;
+while (s[len]!= '\0'){
+	len++;
+}
 
-	while (end >= s)
-	{
-		_putchar(*--end);
-	}
-	_putchar('\n');
+for (int m = len - 1; m >= 0; m--)
+{
+	_putchar(s[m]);
+}
+_putchar('\n');
 }
