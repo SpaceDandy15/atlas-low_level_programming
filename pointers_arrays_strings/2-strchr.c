@@ -2,25 +2,21 @@
 #include <stdio.h>
 /**
  * *_strchr - locates a character in a string
- * @s: string to search
- * @c: char to find
- * Return: a pointer to the first occcurrence of the character c in the string s,
- * or NULL if the character is not found
+ * @param: s1 first string to compare.
+ * @param: s2 second string to compare.
+ * Return: Less than 0 if s1 < s2, 0 if s1 == s2,
+ * more than 0 if s1 > s2
 */
 char *_strchr(char *s, char c)
 {
-				int a;
-
-				while (1)
-				{
-					a = *s++;
-					if (a == c)
-					{
-						return (s - 1);
-					}
-					if (a == 0)
-					{
-						return (NULL);
-					}
-				}
+	while (*s1 == *s2)
+	{
+		if(*s1 == '0')
+		{
+			return 0;
+		}
+		s1++;
+		s2++;
+	}
+	return (*s1 - *s2);
 }
