@@ -2,8 +2,8 @@
 #include <stdio.h>
 /**
  * *_strchr - locates a character in a string
- * @param: s1 first string to compare.
- * @param: s2 second string to compare.
+ * @param s1 first string to compare.
+ * @param s2 second string to compare.
  * Return: Less than 0 if s1 < s2, 0 if s1 == s2,
  * more than 0 if s1 > s2
 */
