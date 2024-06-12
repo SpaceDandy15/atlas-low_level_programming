@@ -33,7 +33,7 @@ int _atoi(char *s)
 					digit = -digit;
 				n = n * 10 + digit;
 				f = 1;
-				if (s[i +1] < '0' || s[i + 1] > '9')
+				if (s[i + 1] < '0' || s[i + 1] > '9')
 						break;
 				f = 0;
 			}
@@ -48,7 +48,7 @@ int _atoi(char *s)
 
 /**
  * main - adds two positive number 
- * argc: number of arguments
+ * @argc: number of arguments
  * @argv: array of arguments
  *
  * Return: 0 (Success), or 1 (Success)  
@@ -63,7 +63,7 @@ int main(int argc, char *argv[])
 	{
 		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			if (argv [i][j] < '0')
+			if (argv [i][j] > '9' || argv[i][j] < '0')
 			{
 				puts("Error");
 				return (1); 
