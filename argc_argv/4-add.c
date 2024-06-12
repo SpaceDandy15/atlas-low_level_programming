@@ -28,7 +28,7 @@ int _atoi(char *s)
 			
 			if (s[i] >= '0' && s[i] <= '9')
 			{
-				digit = s[i] - 0 '0';
+				digit = s[i] - '0';
 				if (d % 2)
 					digit = -digit;
 				n = n* 10 + digit;
@@ -63,7 +63,7 @@ int main(int argc, char *argv[])
 	{
 		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			if (arg [i][j] < '0')
+			if (argv [i][j] < '0')
 			{
 				puts("Error");
 				return (1); 
