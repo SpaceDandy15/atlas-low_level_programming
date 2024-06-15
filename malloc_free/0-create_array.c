@@ -6,7 +6,7 @@
  *  and intializes it with a specifi char
  * @size: size of the array to create
  * @c: char to initialize the array c
- * 
+ *
  * Return: pointer the array (Succes), NULL (ERROR)
 */
 char *create_array(unsigned int size, char c)
@@ -23,7 +23,7 @@ char *create_array(unsigned int size, char c)
 	return (0);
 	while (i < size)
 	{
-		*(p + i) =c;
+		*(p + i) = c;
 		i++;
 	}
 	*(p + i) = '\0';
