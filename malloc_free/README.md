@@ -1,0 +1,1 @@
+fucntion 0 is a function that creates an arry of characters that is initialized with a specific character
