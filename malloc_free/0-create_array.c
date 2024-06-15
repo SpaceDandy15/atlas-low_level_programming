@@ -1,31 +1,31 @@
 #include <stdlib.h>
 #include "main.h"
 
-/**
- * *_strdup - copies the string give as a parameter
- * @str: String to duplicate
+/**r
+ *  *create_array - creates an array of chars,
+ *  and intializes it with a specifi char
+ * @size: size of the array to create
+ * @c: char to initialize the array c
  * 
- * Return: pointer to the copied string (Success), NULL (Error)
+ * Return: pointer the array (Succes), NULL (ERROR)
 */
-char *_strdup(char *str)
+char *create_array(unsigned int size, char c)
 {
-	char *dup;
-	unsigned int i, len;
+	char *p;
+	unsinged int i = 0;
 
-	i = 0;
-	len = 0;
-	if (str == NULL)
+	if (size == 0)
 	return (NULL);
-	
-	while (str[len])
-	len++;
 
-	dup = malloc(sizeof(char) * (len +1));
+	p = (char *) malloc(sizeof(char) * size);
 
-	if (dup == NULL)
-	return (NULL);
-	
-	while ((dup[i]= str[i]) != '\0')
-	i++;
-	return (dup);
-}
+	if (p == NULL)
+	return (0);
+	while (i < size)
+	{
+		*(p + i) =c;
+		i++;
+	}
+	*(p + i) = '\0';
+	return (p);
+	}
