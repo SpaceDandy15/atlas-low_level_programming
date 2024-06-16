@@ -2,4 +2,4 @@ fucntion 0 is a function that creates an arry of characters that is initialized 
 function 1  a function that returns a pointer to a newly allocated space in memory, which contains a copy of the string given as a parameter.
 funtion 2 Write a function that concatenates two strings.
 fucntion 3 Write a function that returns a pointer to a 2 dimensional array of integers.
-function 4
+function 4 
