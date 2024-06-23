@@ -33,7 +33,7 @@
 
 	if ((o == '/' || o == '%') && arg2 == 0)
 	{
-		printf("Erro\n");
+		printf("Error\n");
 		exit(100);
 	}
 
