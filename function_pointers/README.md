@@ -1,0 +1,1 @@
+0-print_name.c is a fucntion that prints a name.
