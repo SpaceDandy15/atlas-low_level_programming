@@ -17,7 +17,7 @@ counter = 0;
 
 while (diff)
 {
-	counter ++;
+	counter ++ ;
 	diff &= (diff - 1);
 }
 
