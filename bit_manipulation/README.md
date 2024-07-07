@@ -1,3 +1,4 @@
 0-binary_to_uint.c is a function that converts a binary number to an unsigned int.
 1-print_bianry.c is a function that prints the binary representation of a number.
 2-get_bit.c is a function that returns the value of a bit at a given index.
+3-set_bit.c is a function that sets the value of a bit to 0 at a given index.
