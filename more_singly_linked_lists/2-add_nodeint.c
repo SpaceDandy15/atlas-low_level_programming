@@ -6,7 +6,7 @@
  * @n: data to insert in that new node
  *
 */
-listint_t *add_nodeint(lsitint_t **head, const int n)
+listint_t *add_nodeint(listint_t **head, const int n)
 {
 	listint_t *new;
 
