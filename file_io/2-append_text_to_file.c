@@ -9,7 +9,7 @@
  * if the file does not exist the users lacks write permissions - -1.
  * Otherwise - 1.
 */
-int append_text_to_file(const char filename, char *text_content)
+int append_text_to_file(const char *filename, char *text_content)
 {
 	int o, w, len = 0;
 
