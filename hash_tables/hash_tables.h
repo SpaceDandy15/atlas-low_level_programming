@@ -10,6 +10,7 @@
  * @key: The key, string
  * The key is a special addition to the HashTable
  * @next: A pointer to the next node of the List
+ * @value: The value corresponding to a key
 */
 typedef struct hash_node_s
 {
