@@ -6,7 +6,7 @@
 #include <stdlib.h>
 
 /**
- * struct has_node_s - node of a hash table
+ * struct hash_node_s - node of a hash table
  * @key: The key, string
  * The key is a special addition to the HashTable
  * @next: A pointer to the next node of the List
