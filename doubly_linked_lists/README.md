@@ -6,3 +6,4 @@
 5-get_dnodeint.c is a function that returns the nth node of a dlistint_t linked list.
 6-sum_dlistint.c is a function that returns the sum of all the data (n) of a dlisint_t linked list.
 7-inset_dnodeint.c is a function that inserts a new node at a given position. The kicker here is that this requires compilation with functions 2 and 3
+8-delete_dnodeint.c is a function that deletes the node at index index of adlistint_t linked list. 
