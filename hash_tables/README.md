@@ -1,0 +1,1 @@
+0-hash_table_create.c is a function that creates a hash table.
