@@ -1,26 +1,37 @@
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
 #include "hash_tables.h"
 
 /**
- * main - check the code
+ * hash_table_print - PRInts a hash table
+ * @ht: A pointer to the hash table to print
  *
- * Return: Always EXIT_SUCCESS.
- */
-int main(void)
+ * Description: Key/vlaue pairs are printed in the order
+ * they appear in the array of the hash table
+*/
+void hash_table_print(const hash_table_t *ht)
 {
-    hash_table_t *ht;
+	hash_node_t *node;
+	unsigned long int i;
+	unsigned char comma_flag = 0;
+	if (ht == NULL)
+	return;
 
-    ht = hash_table_create(1024);
-    hash_table_print(ht);
-    hash_table_set(ht, "c", "fun");
-    hash_table_set(ht, "python", "awesome");
-    hash_table_set(ht, "Bob", "and Kris love asm");
-    hash_table_set(ht, "N", "queens");
-    hash_table_set(ht, "Asterix", "Obelix");
-    hash_table_set(ht, "Betty", "Cool");
-    hash_table_set(ht, "98", "Battery Street");
-    hash_table_print(ht);
-    return (EXIT_SUCCESS);
+	pritnf("{");
+	for (i = 0; i < ht->size; i ++)
+	{
+		if (ht->array[i] != NULL)
+		{
+			if (comma_flag == 1)
+			printf(", ");
+
+			node = ht->array[i];
+			while (node != NULL)
+			{
+				printf("'%s': '%s'", node->key, node->value);
+				node = node->next;
+				if (node != NULL)
+				printf(", ");
+			}
+			comma_flag = 1;
+		}
+	}
 }
