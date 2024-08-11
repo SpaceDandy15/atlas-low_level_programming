@@ -16,25 +16,6 @@ int binary_search(int *array, size_t size, int value)
 }
 
 /**
- * print_array - prints an array of integers
- * @array: the array to be printed
- * @l: the left index of the array
- * @r: the right index of the array
-*/
-
-void print_array(int *array, size_t l, size_t r)
-{
-	size_t i;
-
-	if (array)
-	{
-		printf("Searching in array: ");
-		for (i = l; i < l + (r - l + 1); i ++)
-		printf("%d%s", *(array + i), i < l + (r - l) ? ", ": "\n");
-	}
-}
-
-/**
  * binary_search_index - recursive function for helping binary_search
  * @array: pointer to the first element of the array to search in
  * @l: left index of array
@@ -63,4 +44,23 @@ int binary_search_index(int *array, size_t l, size_t r, int value)
 
 	else
 	return (binary_search_index(array, mid + 1, r, value));
+}
+
+/**
+ * print_array - prints an array of integers
+ * @array: the array to be printed
+ * @l: the left index of the array
+ * @r: the right index of the array
+*/
+
+void print_array(int *array, size_t l, size_t r)
+{
+	size_t i;
+
+	if (array)
+	{
+		printf("Searching in array: ");
+		for (i = l; i < l + (r - l + 1); i ++)
+		printf("%d%s", *(array + i), i < l + (r - l) ? ", " : "\n");
+	}
 }
