@@ -53,11 +53,14 @@ int binary_search_index(int *array, size_t l, size_t r, int value)
 
 	mid = 1 + (r - 1) / 2;
 	if (l == r)
-	return (*(array + mid) == value ? (int)mid: -1);
+	return (*(array + mid) == value ? (int)mid : -1);
 
 	if (array[mid] == value)
 	return (mid);
 
 	else if (array[mid] > value)
 	return (binary_search_index(array, l, mid - 1, value));
+
+	else
+	return (binary_search_index(array, mid + 1, r, value));
 }
