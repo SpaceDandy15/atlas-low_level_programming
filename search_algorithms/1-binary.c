@@ -32,7 +32,7 @@ int binary_search_index(int *array, size_t l, size_t r, int value)
 	return (-1);
 	print_array(array, l, r);
 
-	mid = 1 + (r - 1) / 2;
+	mid = l + (r - l) / 2;
 	if (l == r)
 	return (*(array + mid) == value ? (int)mid : -1);
 
